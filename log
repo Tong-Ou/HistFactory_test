@@ -1,0 +1,127 @@
+[?1034h
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+ 
+==========================================================================================================================================================================================
+LimitCrossCheck::PlotFitCrossChecks("./results/example_UsingC_twochannel_combined_meas_model.root","./test","combined" ,"ModelConfig" ,"obsData")
+
+
+=====================================================================================================
+
+
+>>>>>>>>>> SUCCESSFULLY opened file: ./results/example_UsingC_twochannel_combined_meas_model.root <<<<<<<<<<
+
+>>>>>>>>>> SUCCESSFULLY retrieved WS: combined <<<<<<<<<<
+
+>>>>>>>>>> SUCCESSFULLY retrieved ModelConfig: ModelConfig <<<<<<<<<<
+
+>>>>>>>>>> SUCCESSFULLY retrieved PDF <<<<<<<<<<
+
+>>>>>>>>>> SUCCESSFULLY retrieved Data <<<<<<<<<<
+
+ Snapshot 'NominalParamValues' already exists in  workspace, will not overwrite it
+
+------------------------------------------------------------------------
+  List of model Observables : 
+------------------------------------------------------------------------
+                                                                        channel1 HAS:      2 bins
+                                                                        channel2 HAS:      2 bins
+Total Number of categories: 2  total number of bins is: 4
+
+------------------------------------------------------------------------
+ Samples in each region : 
+------------------------------------------------------------------------
+REGION: channel1 has components: 
+ zprime ,  background1 ,  background2 , 
+REGION: channel2 has components: 
+ zprime ,  background1 ,  background2 , 
+
+
+-------------------------------------------------------------------
+List of nuisance parameters : 
+-------------------------------------------------------------------
+                                  alpha_syst1 : 0   Err:0  Constant: 0
+                                  alpha_syst2 : 0   Err:0  Constant: 0
+                                  alpha_syst3 : 0   Err:0  Constant: 0
+                                  alpha_syst4 : 0   Err:0  Constant: 0
+                                  alpha_syst5 : 0   Err:0  Constant: 0
+                                  alpha_syst6 : 0   Err:0  Constant: 0
+gamma_stat_channel1_bin_0 : 1+/-0     IsNormFactor=0
+gamma_stat_channel1_bin_1 : 1+/-0     IsNormFactor=0
+gamma_stat_channel2_bin_0 : 1+/-0     IsNormFactor=0
+gamma_stat_channel2_bin_1 : 1+/-0     IsNormFactor=0
+------------------------------------
+Total Number of Gammas: 4
+Total Number of NP: 6
+
+-------------------------------------------------------------------
+  List of constant parameters : 
+-------------------------------------------------------------------
+                                    weightVar : 0   Err:0  Constant: 0
+                                         Lumi : 1   Err:0  Constant: 1
+                                SigXsecOverSM : 1   Err:0  Constant: 0
+
+ "weightVar",  "SigXsecOverSM", 
+
+-------------------------------------------------------------------
+  List of parameters of interests : 
+-------------------------------------------------------------------
+  SigXsecOverSM : 1   Err:0  Constant: 0
+RooRealVar::SigXsecOverSM = 1  L(0 - 3) 
+
+
+
+
+ category: channel1
+   OBS2: channel1
+  testVale:  for zprime : 15
+  testVale:  for background1 : 75
+  testVale:  for background2 : 50
+ category: channel2
+   OBS2: channel2
+  testVale:  for zprime : 5.5
+  testVale:  for background1 : 50
+  testVale:  for background2 : 50
+DONE WITH PREPARESYSINFO
+
+=========================================================================
+  Printing sys for sample:     ' zprime ' 
+=========================================================================
+  sys , region                            | channel1           | channel2           |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ syst1                                    |         5.0 / -5.0 |           -- / --  |
+ syst2                                    |           -- / --  |           -- / --  |
+ syst3                                    |           -- / --  |           -- / --  |
+ syst4                                    |           -- / --  |         5.0 / -5.0 |
+ syst5                                    |           -- / --  |           -- / --  |
+ syst6                                    |           -- / --  |           -- / --  |
+ SigXsecOverSM                            |     100.0 / -100.0 |     100.0 / -100.0 |
+
+=========================================================================
+  Printing sys for sample:     ' background1 ' 
+=========================================================================
+  sys , region                            | channel1           | channel2           |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ syst1                                    |           -- / --  |           -- / --  |
+ syst2                                    |         5.0 / -5.0 |           -- / --  |
+ syst3                                    |           -- / --  |           -- / --  |
+ syst4                                    |           -- / --  |           -- / --  |
+ syst5                                    |           -- / --  |         5.0 / -5.0 |
+ syst6                                    |           -- / --  |           -- / --  |
+ SigXsecOverSM                            |           -- / --  |           -- / --  |
+
+=========================================================================
+  Printing sys for sample:     ' background2 ' 
+=========================================================================
+  sys , region                            | channel1           | channel2           |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ syst1                                    |           -- / --  |           -- / --  |
+ syst2                                    |           -- / --  |           -- / --  |
+ syst3                                    |         5.0 / -5.0 |           -- / --  |
+ syst4                                    |           -- / --  |           -- / --  |
+ syst5                                    |           -- / --  |           -- / --  |
+ syst6                                    |           -- / --  |         5.0 / -5.0 |
+ SigXsecOverSM                            |           -- / --  |           -- / --  |
+

@@ -1,0 +1,32 @@
+<!--
+This xml file created automatically on: 
+2018-10-21
+-->
+<!DOCTYPE Channel  SYSTEM 'HistFactorySchema.dtd'>  
+
+  <Channel Name="channel2" InputFile="" >
+
+    <Data HistoName="data" InputFile="./example2.root" HistoPath=""  /> 
+
+    <StatErrorConfig RelErrorThreshold="0.05" ConstraintType="Poisson" /> 
+
+    <Sample Name="zprime"  HistoPath=""  HistoName="zprime"  InputFile="./example2.root"  NormalizeByTheory="True" >
+      <OverallSys Name="syst4"  High="1.05"  Low="0.95"   /> 
+      <NormFactor Name="SigXsecOverSM"  Val="1"  High="3"  Low="0"  Const="False"   /> 
+    </Sample>
+
+
+    <Sample Name="background1"  HistoPath=""  HistoName="background1"  InputFile="./example2.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile="./example2.root"  HistoName="background1_statUncert"  HistoPath=""  /> 
+      <OverallSys Name="syst5"  High="1.05"  Low="0.95"   /> 
+    </Sample>
+
+
+    <Sample Name="background2"  HistoPath=""  HistoName="background2"  InputFile="./example2.root"  NormalizeByTheory="True" >
+      <StatError Activate="True"  InputFile=""  HistoName=""  HistoPath=""  /> 
+      <OverallSys Name="syst6"  High="1.05"  Low="0.95"   /> 
+    </Sample>
+
+
+
+  </Channel>  

@@ -1,0 +1,18 @@
+<!--
+This xml file created automatically on: 
+2018-10-21
+-->
+<!DOCTYPE Combination  SYSTEM 'HistFactorySchema.dtd'>
+
+<Combination OutputFilePrefix="./results/example_UsingC_twochannel" >
+
+
+  <Input>./xmlFromCCode/meas_channel1.xml</Input>
+  <Input>./xmlFromCCode/meas_channel2.xml</Input>
+
+  <Measurement Name="meas" Lumi="1" LumiRelErr="0.1" ExportOnly="False"  >
+    <POI>SigXsecOverSM</POI>  
+    <ParamSetting Const="True">Lumi</ParamSetting>
+  </Measurement> 
+
+</Combination>
