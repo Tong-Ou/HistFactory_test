@@ -3,6 +3,10 @@
 This repository is dedicated to the simple test of HistFactory.
 `makeExample.C` and `example.C` are example macros given in `$ROOTSYS/tutorials/histfactory`,
 while `WSinspector.C` (author: Valerio Dao) is designed to print out contents in the created workspace.
+## Download codes
+`git clone https://github.com/Tong-Ou/HistFactory_test.git`
+or
+Click `Clone or Download` to download `.zip` package.
 ## How to run
 1. `root -b -q makeExample.C` to create data, signal and background histograms, which would be 
 written into a root file. The `example1.root` and `example2.root` in the repository are root files 
@@ -17,6 +21,6 @@ In two-channel case with output prefix set to "example_UsingC_twochannel", outpu
 *`example_UsingC_twochannel_combined_meas_model.root` -- Contain workspace combining two channels.
 *`example_UsingC_twochannel_combined_meas_profileLR.eps` -- Plot of combined log likelihood vs parameter of interest.
 *`example_UsingC_twochannel_meas.root` -- Contain summary of channel1, channel2 and combined(?).
-*Others: Results table and log file.
+* Others: Results table and log file.
 4. `vim WSinspector.C`, set sample names in line 1084-1086 to be those in your workspace.
 5. `python runInspector.py <wsfile> <wsname> <dataname>` to print out contents of workspace.
