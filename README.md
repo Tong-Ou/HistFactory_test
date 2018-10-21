@@ -12,11 +12,11 @@ You can also reset other terms like systematics, statistical uncertainties, etc 
 of the corresponding functions) in `example.C`.
 3. `root -b -q example.C` to generate workspaces with HistFactory. Find the outputs in `./results`. 
 In two-channel case with output prefix set to "example_UsingC_twochannel", output files include:
-*example_UsingC_twochannel_channel1(2)_meas_model.root -- Contain workspace of channel1(2).
-*example_UsingC_twochannel_channel1(2)_profileLR.eps -- Plot of log profile likelihood vs parameter of interest.
-*example_UsingC_twochannel_combined_meas_model.root -- Contain workspace combining two channels.
-*example_UsingC_twochannel_combined_meas_profileLR.eps -- Plot of combined log likelihood vs parameter of interest.
-*example_UsingC_twochannel_meas.root -- Contain summary of channel1, channel2 and combined(?).
+*`example_UsingC_twochannel_channel1(2)_meas_model.root` -- Contain workspace of channel1(2).
+*`example_UsingC_twochannel_channel1(2)_profileLR.eps` -- Plot of log profile likelihood vs parameter of interest.
+*`example_UsingC_twochannel_combined_meas_model.root` -- Contain workspace combining two channels.
+*`example_UsingC_twochannel_combined_meas_profileLR.eps` -- Plot of combined log likelihood vs parameter of interest.
+*`example_UsingC_twochannel_meas.root` -- Contain summary of channel1, channel2 and combined(?).
 *Others: Results table and log file.
 4. `vim WSinspector.C`, set sample names in line 1084-1086 to be those in your workspace.
 5. `python runInspector.py <wsfile> <wsname> <dataname>` to print out contents of workspace.
