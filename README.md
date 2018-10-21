@@ -1,7 +1,7 @@
 # HistFactory_test
 ## Introduction
 This repository is dedicated to the simple test of HistFactory.
-makeExample.C and example.C are example macros given in $ROOTSYS/tutorials/histfactory,
+`makeExample.C` and `example.C` are example macros given in $ROOTSYS/tutorials/histfactory,
 while WSinspector.C (author: Valerio Dao) is designed to print out contents in the created workspace.
 ## How to run
 1. Run makeExample.C to create data, signal and background histograms, which would be 
