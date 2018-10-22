@@ -1,0 +1,33 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /global/u1/t/tongou/WSInspector/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_c2ab5/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_c2ab5.dir/build.make CMakeFiles/cmTC_c2ab5.dir/build
+gmake[1]: Entering directory `/global/u1/t/tongou/WSInspector/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c2ab5.dir/CheckSymbolExists.c.o
+/cvmfs/atlas.cern.ch/repo/sw/software/21.2/sw/lcg/releases/gcc/6.2binutils/x86_64-slc6-gcc62-opt/bin/gcc    -o CMakeFiles/cmTC_c2ab5.dir/CheckSymbolExists.c.o   -c /global/u1/t/tongou/WSInspector/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c2ab5
+/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Cmake/3.11.0/Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2ab5.dir/link.txt --verbose=1
+/cvmfs/atlas.cern.ch/repo/sw/software/21.2/sw/lcg/releases/gcc/6.2binutils/x86_64-slc6-gcc62-opt/bin/gcc     -Wl,--as-needed -Wl,--hash-style=both  -rdynamic CMakeFiles/cmTC_c2ab5.dir/CheckSymbolExists.c.o  -o cmTC_c2ab5 
+CMakeFiles/cmTC_c2ab5.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_c2ab5] Error 1
+gmake[1]: Leaving directory `/global/u1/t/tongou/WSInspector/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_c2ab5/fast] Error 2
+
+File /global/u1/t/tongou/WSInspector/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
