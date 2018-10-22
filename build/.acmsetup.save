@@ -1,0 +1,4 @@
+SourceArea = /global/u1/t/tongou/WSInspector/build/../source
+TestArea = /global/u1/t/tongou/WSInspector/build
+ACM_GITLAB_PATH_PREFIX = https://:@gitlab.cern.ch:8443/
+asetupArguments = AnalysisBase,21.2.27

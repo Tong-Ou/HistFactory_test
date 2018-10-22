@@ -1,0 +1,8 @@
+[release_metadata]
+release:1.0.0
+nightly name:master
+project name:WorkDir
+nightly release:a9b57da
+date:2018-10-22T1313
+compiler:GNU-6.2.0
+cxxpath:/cvmfs/atlas.cern.ch/repo/sw/software/21.2/sw/lcg/releases/gcc/6.2binutils/x86_64-slc6-gcc62-opt/bin/g++

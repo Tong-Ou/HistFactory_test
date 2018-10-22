@@ -1081,9 +1081,9 @@ namespace LimitCrossCheck{
     cout << "DONE WITH PREPARESYSINFO" << endl << endl;
 
 
-    PrintSysPerSample("zprime");
-    PrintSysPerSample("background1");
-    PrintSysPerSample("background2");
+    PrintSysPerSample("Zprime");
+    PrintSysPerSample("ttbar");
+    PrintSysPerSample("multijet");
 
     return; /// VALERIO BREAK!!!!!!!!
     cout << endl << endl << endl;
